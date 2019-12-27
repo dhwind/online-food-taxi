@@ -4,26 +4,28 @@
 @import 'navStyle';
 
 .main {
-    
-    height: auto;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    background: rgb(245, 245, 245);
-    padding-bottom: 25%;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 20%;
 
-    .banner {
+    .content {
+        margin-left: 100px;
+        width: 85%;
+        height: 100%;
         display: flex;
-        justify-content: center;
-        height: 450px;
+        flex-direction: column;
+        align-items: center;
 
         .slider {
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            margin-top: 50px;
-            margin-left: 60px;
+            margin-top: 40px;
             border-radius: 25px;
-            height: 90%;
-            width: 80%;
+            height: 400px;
+            width: 100%;
             background-image: url('/images/slider/pizza-background.jpg');
             background-size: cover;
 
@@ -57,20 +59,13 @@
                 }
             }
         }
-    }
-
-    .content {
-        padding-top: 5%;
-        padding-left: 13%;
-        width: 100%;
-        height: auto;
 
         .category {
+            padding-top: 5%;
             display: flex;
             justify-content: space-between;
-            margin-left: 18px;
             height: 10%;
-            width: 77%;
+            width: 100%;
 
             .category-name {
                 font-size: 36px;
@@ -101,19 +96,20 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: space-between;
+            width: 100%;
 
             .product {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: flex-end;
-                width: 300px;
-                height: 450px;
-                background: #FFFFFF;
+                width: 320px;
+                height: 500px;
+                background-color: #FFFFFF;
                 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
                 border-radius: 20px;
-                margin: 30px 20px 40px 20px;
+                margin: 40px 0 30px 0;
 
                 .product-name {
                     text-align: center;
@@ -137,7 +133,7 @@
 
                 .add-btn {
                     justify-content: center;
-                    background: #6A45B6;
+                    background-color: #6A45B6;
                     height: 65px;
                     width: 65px;
                     border: none;
@@ -149,33 +145,23 @@
                         color: #FFFFFF;
                         font-size: 30px;
                     }
+
+                    &:hover {
+                        background-color: rgb(134, 109, 184);
+                    }
                 }
             }
         }
     }
 }
 
-@include responsive(tab-port) {
+@include responsive(tab-land){
     .main {
-
-        .banner {
-            height: 200px;
-
-            .slider {
-
-                border-radius: 0;
-                height: 100%;
-                width: 100%;
-                margin: 0;
-            }
-        }
-
+        
         .content {
-            padding-left: 0;
 
             .category {
-                margin: 0;
-                width: 100%;
+
                 margin-top: 20px;
                 flex-direction: column;
                 flex-wrap: wrap;
@@ -183,26 +169,71 @@
 
                 .category-sort {
                     margin-top: 5px;
-
-                    p {
-                        font-size: 10px;
-                    }
-
-                    select {
-                        font-size: 11px;
-                    }
                 }
+            }
+
+            .product-list {
+                
+                width: 70%;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .main {
+        
+        .content {
+
+
+            .product-list {
+                
+                width: 80%;
+            }
+        }
+        
+    }
+};
+
+@media only screen and (max-width: 1000px){
+    .main {
+        
+        .content {
+
+
+            .product-list {
+                
+                width: 90%;
+            }
+        }
+        
+    }
+};
+
+
+@include responsive(tab-port) {
+    .main {
+
+        .content {
+            margin-left: 0;
+            width: 100%;
+
+            .slider {
+
+                border-radius: 0;
+                margin: 0;
             }
 
             .product-list {
                 flex-direction: column;
                 align-items: center;
+                margin-left: 0;
+                width: 100%;
                 
-
                 .product {
                     height: 350px;
                     width: 100%;
-                    padding: 0;
                     margin: 50px 0;
                     border-radius: 0;
                     box-shadow: 0px 20px rgba(0, 0, 0, 0.15) 0px;
