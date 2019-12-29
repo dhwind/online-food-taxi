@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Online FoodTaxi</title>
-    <link rel="import" href="product-page.html">
+    <title>Product Page</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="https://kit.fontawesome.com/ee9bbcd528.js" crossorigin="anonymous"></script>
     <script src="js/online-food-scrypt.js"></script>
 </head>
-
 <body>
     <header class="head">
-        <div class="stock"> 
+        <div class="stock">
             <p>* Only in mobile application! <strong>3</strong> PIZZAS FOR <strong>30$</strong>!</p>
         </div>
         <div class="head-panel">
@@ -42,7 +39,7 @@
     </header>
     <aside class="navigation">
         <ul class="category-menu">
-            <li><a href="productPage.html"><img src="images/panel-icons/pizza.svg" alt="pizza"></a></li>
+            <li><img src="images/panel-icons/pizza.svg" alt="pizza"></li>
             <li><img src="images/panel-icons/sushi.svg" alt="sushi"></li>
             <li><img src="images/panel-icons/burger.svg" alt="burger"></li>
             <li><img src="images/panel-icons/bowl.svg" alt="bowl"></li>
@@ -54,22 +51,61 @@
     </aside>
     <main class="main">
         <div class="content">
-            <div class="slider">
-                <div class="slider-btns">
-                    <input type="radio" name="slider button" id="slider-btn-1">
-                    <label for="slider-btn-1"></label>
-                    <input type="radio" name="slider button" id="slider-btn-2">
-                    <label for="slider-btn-2"></label>
-                    <input type="radio" name="slider button" id="slider-btn-3">
-                    <label for="slider-btn-3"></label>
-                    <input type="radio" name="slider button" id="slider-btn-4">
-                    <label for="slider-btn-4"></label>
+            <div class="category">
+                <p class="category-name">Pizza</p>
+                <div class="category-sort">
+                    <p>Sort by: 
+                        <select>
+                            <option value="popularity">popularity</option>
+                            <option value="price">price</option>
+                            <option value="date">date</option>
+                        </select>
+                    </p>
                 </div>
             </div>
-            <div class="category">
-                <p class="category-name">We recommend</p>
-            </div>
             <div class="product-list">
+                <div class="product">
+                    <p class="product-name">Product Name</p>
+                    <p class="product-description">Product Description</p>
+                    <p class="product-price">100.-</p>
+                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="product">
+                    <p class="product-name">Product Name</p>
+                    <p class="product-description">Product Description</p>
+                    <p class="product-price">100.-</p>
+                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="product">
+                    <p class="product-name">Product Name</p>
+                    <p class="product-description">Product Description</p>
+                    <p class="product-price">100.-</p>
+                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="product">
+                    <p class="product-name">Product Name</p>
+                    <p class="product-description">Product Description</p>
+                    <p class="product-price">100.-</p>
+                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="product">
+                    <p class="product-name">Product Name</p>
+                    <p class="product-description">Product Description</p>
+                    <p class="product-price">100.-</p>
+                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="product">
+                    <p class="product-name">Product Name</p>
+                    <p class="product-description">Product Description</p>
+                    <p class="product-price">100.-</p>
+                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="product">
+                    <p class="product-name">Product Name</p>
+                    <p class="product-description">Product Description</p>
+                    <p class="product-price">100.-</p>
+                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                </div>
                 <div class="product">
                     <p class="product-name">Product Name</p>
                     <p class="product-description">Product Description</p>
@@ -99,21 +135,21 @@
             </div>
             <ul class="delivery-menu">
                 <p>Delivery menu</p>
-                <li><a href="#">Pizza</a></li>
-                <li><a href="#">Rolls</a></li>
-                <li><a href="#">Sets</a></li>
-                <li><a href="#">Noodles wok</a></li>
-                <li><a href="#">Salats</a></li>
-                <li><a href="#">Soups</a></li>
-                <li><a href="#">Desserts</a></li>
-                <li><a href="#">Drinks</a></li>
+                <li><a href="#" class="footer-category">Pizza</a></li>
+                <li><a href="#" class="footer-category">Rolls</a></li>
+                <li><a href="#" class="footer-category">Sets</a></li>
+                <li><a href="#" class="footer-category">Noodles wok</a></li>
+                <li><a href="#" class="footer-category">Salats</a></li>
+                <li><a href="#" class="footer-category">Soups</a></li>
+                <li><a href="#" class="footer-category">Desserts</a></li>
+                <li><a href="#" class="footer-category">Drinks</a></li>
             </ul>
             <ul class="main-info">
                 <p>Main info</p>
-                <li><a href="#">Stocks</a></li>
-                <li><a href="#">Paying & Delivery</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Provision of services rules</a></li>
+                <li><a href="#" class="footer-category">Stocks</a></li>
+                <li><a href="#" class="footer-category">Paying & Delivery</a></li>
+                <li><a href="#" class="footer-category">Privacy Policy</a></li>
+                <li><a href="#" class="footer-category">Provision of services rules</a></li>
             </ul>
             <div class="icons">
                 <div class="app-icons">
@@ -129,5 +165,4 @@
         </div>
     </footer>
 </body>
-
 </html>
