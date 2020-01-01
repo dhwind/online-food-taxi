@@ -9,8 +9,8 @@
     <link rel="import" href="product-page.html">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <script src="https://kit.fontawesome.com/ee9bbcd528.js" crossorigin="anonymous"></script>
-    <script src="js/online-food-scrypt.js"></script>
+    
+    
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <p>* Only in mobile application! <strong>3</strong> PIZZAS FOR <strong>30$</strong>!</p>
         </div>
         <div class="head-panel">
-            <div class="btn-menu">
+            <div class="menu-btn">
                 <img src="images/panel-icons/btn_menu.svg">
             </div>
             <div class="logo">
@@ -40,9 +40,9 @@
             </div>
         </div>
     </header>
-    <aside class="navigation">
-        <ul class="category-menu">
-            <li><a href="productPage.html"><img src="images/panel-icons/pizza.svg" alt="pizza"></a></li>
+    <nav class="navigation">
+        <ul class="navigation__menu">
+            <li><a href="product-page.html"><img src="images/panel-icons/pizza.svg" alt="pizza"></a></li>
             <li><img src="images/panel-icons/sushi.svg" alt="sushi"></li>
             <li><img src="images/panel-icons/burger.svg" alt="burger"></li>
             <li><img src="images/panel-icons/bowl.svg" alt="bowl"></li>
@@ -51,42 +51,46 @@
             <li><img src="images/panel-icons/cake.svg" alt="cake"></li>
             <li><img src="images/panel-icons/drink.svg" alt="drink"></li>
         </ul>
-    </aside>
+    </nav>
     <main class="main">
         <div class="content">
             <div class="slider">
+                <div class="slider__image"><img src="/images/slider/pizza-background.jpg" alt=""></div>
+                <div class="slider__image slider__image__active"><img src="/images/slider/burger-background.jpg" alt=""></div>
+                <div class="slider__image"><img src="/images/slider/soup-background.jpg" alt=""></div>
+                <div class="slider__image"><img src="/images/slider/sushi-background.jpg" alt=""></div>
                 <div class="slider-btns">
                     <input type="radio" name="slider button" id="slider-btn-1">
-                    <label for="slider-btn-1"></label>
-                    <input type="radio" name="slider button" id="slider-btn-2">
-                    <label for="slider-btn-2"></label>
+                    <label class="slider-button" for="slider-btn-1"></label>
+                    <input checked type="radio" name="slider button" id="slider-btn-2">
+                    <label class="slider-button" for="slider-btn-2"></label>
                     <input type="radio" name="slider button" id="slider-btn-3">
-                    <label for="slider-btn-3"></label>
+                    <label class="slider-button" for="slider-btn-3"></label>
                     <input type="radio" name="slider button" id="slider-btn-4">
-                    <label for="slider-btn-4"></label>
+                    <label class="slider-button" for="slider-btn-4"></label>
                 </div>
             </div>
             <div class="category">
-                <p class="category-name">We recommend</p>
+                <p class="category__name">We recommend</p>
             </div>
             <div class="product-list">
                 <div class="product">
-                    <p class="product-name">Product Name</p>
-                    <p class="product-description">Product Description</p>
-                    <p class="product-price">100.-</p>
-                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                    <p class="product__name">Product Name</p>
+                    <p class="product__description">Product Description</p>
+                    <p class="product__price">100.-</p>
+                    <button class="product__btn"><i class="fas fa-plus"></i></button>
                 </div>
                 <div class="product">
-                    <p class="product-name">Product Name</p>
-                    <p class="product-description">Product Description</p>
-                    <p class="product-price">100.-</p>
-                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                    <p class="product__name">Product Name</p>
+                    <p class="product__description">Product Description</p>
+                    <p class="product__price">100.-</p>
+                    <button class="product__btn"><i class="fas fa-plus"></i></button>
                 </div>
                 <div class="product">
-                    <p class="product-name">Product Name</p>
-                    <p class="product-description">Product Description</p>
-                    <p class="product-price">100.-</p>
-                    <button class="add-btn"><i class="fas fa-plus"></i></button>
+                    <p class="product__name">Product Name</p>
+                    <p class="product__description">Product Description</p>
+                    <p class="product__price">100.-</p>
+                    <button class="product__btn"><i class="fas fa-plus"></i></button>
                 </div>
             </div>
         </div>
@@ -128,6 +132,10 @@
             </div>
         </div>
     </footer>
+
+    
+    <script src="https://kit.fontawesome.com/ee9bbcd528.js" crossorigin="anonymous"></script>
+    <script src="js/online-food-scrypt.js"></script>
 </body>
 
 </html>

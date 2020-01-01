@@ -39,14 +39,14 @@
     justify-content: space-between;
     height: 70px;
     background-color: #6A45B6; }
-    .head .head-panel .btn-menu {
+    .head .head-panel .menu-btn {
       position: relative;
       margin-left: 10px;
       padding: 15px;
       cursor: pointer; }
-      .head .head-panel .btn-menu img {
+      .head .head-panel .menu-btn img {
         border-radius: 2px; }
-      .head .head-panel .btn-menu:hover {
+      .head .head-panel .menu-btn:hover {
         background-color: #866db8; }
     .head .head-panel .callback h1 {
       font-size: 20px;
@@ -74,17 +74,23 @@
   height: calc(100% - 100px);
   z-index: 1;
   background-color: #fff;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15); }
-  .navigation .category-menu {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s linear; }
+  .navigation.active-menu {
+    opacity: 1;
+    transform: translateX(0%); }
+  .navigation__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; }
-    .navigation .category-menu li {
+    .navigation__menu li {
       padding: 18px;
       border-radius: 100%;
       margin: 15px auto; }
-      .navigation .category-menu li:hover {
+      .navigation__menu li:hover {
         cursor: pointer;
         background-color: #bbbbbb; }
 
@@ -105,14 +111,30 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
+      position: relative;
       margin-top: 40px;
       border-radius: 25px;
       height: 400px;
-      width: 100%;
-      background-image: url("/images/slider/pizza-background.jpg");
-      background-size: cover; }
+      width: 100%; }
+      .main .content .slider__image {
+        position: absolute;
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-position: center center;
+        background-size: cover;
+        transition: opacity 0.5s ease-in; }
+        .main .content .slider__image img {
+          width: 100%;
+          height: 100%;
+          border-radius: inherit; }
+        .main .content .slider__image__active {
+          opacity: 1;
+          transition: opacity 1s ease-in; }
       .main .content .slider .slider-btns {
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        z-index: 9999; }
         .main .content .slider .slider-btns label {
           margin: 0 20px;
           margin-bottom: 15px;
@@ -129,6 +151,7 @@
         .main .content .slider .slider-btns input {
           display: none; }
           .main .content .slider .slider-btns input:checked + label::before {
+            transition: 0.2s ease-in;
             width: 20px;
             border-radius: 8px;
             background-color: #FED73A; }
@@ -138,14 +161,14 @@
       justify-content: space-between;
       height: 10%;
       width: 100%; }
-      .main .content .category .category-name {
+      .main .content .category__name {
         font-size: 36px;
         color: #222124; }
-      .main .content .category .category-sort {
+      .main .content .category .sort {
         margin-top: 15px; }
-        .main .content .category .category-sort p {
+        .main .content .category .sort p {
           font-size: 14px; }
-        .main .content .category .category-sort select {
+        .main .content .category .sort select {
           background: none;
           -webkit-appearance: none;
           appearance: none;
@@ -161,6 +184,8 @@
       justify-content: space-between;
       width: 100%; }
       .main .content .product-list .product {
+        -webkit-display: flex;
+        -ms-display: flex;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -171,21 +196,21 @@
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
         margin: 40px 0 30px 0; }
-        .main .content .product-list .product .product-name {
+        .main .content .product-list .product__name {
           text-align: center;
           color: #222124;
           font-size: 22px; }
-        .main .content .product-list .product .product-description {
+        .main .content .product-list .product__description {
           text-align: center;
           font-size: 14px;
           color: #767281;
           margin: 10px 10px 30px 10px; }
-        .main .content .product-list .product .product-price {
+        .main .content .product-list .product__price {
           text-align: center;
           font-size: 38px;
           color: #222124;
           margin: 0 auto 80px auto; }
-        .main .content .product-list .product .add-btn {
+        .main .content .product-list .product__btn {
           justify-content: center;
           background-color: #6A45B6;
           height: 65px;
@@ -193,11 +218,12 @@
           border: none;
           border-radius: 100%;
           position: absolute;
-          margin-top: 30px; }
-          .main .content .product-list .product .add-btn i {
+          margin-top: 30px;
+          transition: background 0.2s linear; }
+          .main .content .product-list .product__btn i {
             color: #fff;
             font-size: 30px; }
-          .main .content .product-list .product .add-btn:hover {
+          .main .content .product-list .product__btn:hover {
             background-color: #866db8; }
 
 .footer {
@@ -278,14 +304,21 @@
     display: none; } }
 @media only screen and (max-width: 900px) {
   .navigation {
-    position: relative;
     width: 100%;
-    height: auto; }
-    .navigation .category-menu {
+    height: auto;
+    opacity: 0;
+    position: relative;
+    display: none; }
+    .navigation.active-menu {
+      display: block; }
+    .navigation__menu {
       flex-direction: row; }
-      .navigation .category-menu li {
-        margin: 5px auto;
-        padding: 16px; } }
+      .navigation__menu li {
+        margin: 5px auto; } }
+@media only screen and (max-width: 600px) {
+  .navigation__menu li {
+    margin: 5px auto;
+    padding: 14px; } }
 @media only screen and (max-width: 1250px) {
   .main .content .category {
     margin-top: 20px;
