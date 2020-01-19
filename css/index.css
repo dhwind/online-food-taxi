@@ -61,6 +61,7 @@
     .head .head-panel .callback i {
       color: #FED73A; }
     .head .head-panel .cart {
+      position: relative;
       padding: 10px;
       border-radius: 100%;
       cursor: pointer;
@@ -97,6 +98,7 @@
 .main {
   display: flex;
   justify-content: center;
+  height: 100%;
   width: 100%;
   background-color: whitesmoke;
   padding-bottom: 10%; }
@@ -108,6 +110,7 @@
     flex-direction: column;
     align-items: center; }
     .main .content .slider {
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: flex-end;
@@ -116,7 +119,7 @@
       border-radius: 25px;
       height: 400px;
       width: 100%; }
-      .main .content .slider__image {
+      .main .content .slider .slider-image {
         position: absolute;
         border-radius: inherit;
         width: 100%;
@@ -125,11 +128,11 @@
         background-position: center center;
         background-size: cover;
         transition: opacity 0.5s ease-in; }
-        .main .content .slider__image img {
+        .main .content .slider .slider-image img {
           width: 100%;
           height: 100%;
           border-radius: inherit; }
-        .main .content .slider__image__active {
+        .main .content .slider .slider-image__active {
           opacity: 1;
           transition: opacity 1s ease-in; }
       .main .content .slider .slider-btns {
@@ -184,6 +187,7 @@
       justify-content: space-between;
       width: 100%; }
       .main .content .product-list .product {
+        position: relative;
         -webkit-display: flex;
         -ms-display: flex;
         display: flex;
@@ -191,13 +195,17 @@
         align-items: center;
         justify-content: flex-end;
         width: 320px;
-        height: 500px;
         background-color: #fff;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
         margin: 40px 0 30px 0; }
+        .main .content .product-list .product__image {
+          height: 200px;
+          width: 70%;
+          padding: 10px; }
         .main .content .product-list .product__name {
           text-align: center;
+          margin: 15px auto;
           color: #222124;
           font-size: 22px; }
         .main .content .product-list .product__description {
@@ -309,7 +317,7 @@
     opacity: 0;
     position: relative;
     display: none; }
-    .navigation.active-menu {
+    .navigation .active-menu {
       display: block; }
     .navigation__menu {
       flex-direction: row; }

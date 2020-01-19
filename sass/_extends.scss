@@ -1,0 +1,24 @@
+%links {
+    
+    white-space: nowrap;
+
+    i {
+        font-size: 17px;
+        padding-right: 9px;
+        color: $fontIconsColor;
+        margin-right: 0;
+
+        a {
+            font-family: 'Museo Sans Cyrl', sans-serif;
+            font-weight: 550;
+            color: $whiteColor;
+            font-size: 17px;
+            text-decoration: none;
+            padding-left: 9px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

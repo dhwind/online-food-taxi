@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online FoodTaxi</title>
-    <link rel="import" href="product-page.html">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    
-    
 </head>
 
 <body>
     <header class="head">
-        <div class="stock"> 
+        <div class="stock">
             <p>* Only in mobile application! <strong>3</strong> PIZZAS FOR <strong>30$</strong>!</p>
         </div>
         <div class="head-panel">
@@ -55,10 +56,10 @@
     <main class="main">
         <div class="content">
             <div class="slider">
-                <div class="slider__image"><img src="/images/slider/pizza-background.jpg" alt=""></div>
-                <div class="slider__image slider__image__active"><img src="/images/slider/burger-background.jpg" alt=""></div>
-                <div class="slider__image"><img src="/images/slider/soup-background.jpg" alt=""></div>
-                <div class="slider__image"><img src="/images/slider/sushi-background.jpg" alt=""></div>
+                <div class="slider-image"><img src="/images/slider/pizza-background.jpg" alt=""></div>
+                <div class="slider-image slider-image__active"><img src="/images/slider/burger-background.jpg" alt=""></div>
+                <div class="slider-image"><img src="/images/slider/soup-background.jpg" alt=""></div>
+                <div class="slider-image"><img src="/images/slider/sushi-background.jpg" alt=""></div>
                 <div class="slider-btns">
                     <input type="radio" name="slider button" id="slider-btn-1">
                     <label class="slider-button" for="slider-btn-1"></label>
@@ -75,6 +76,7 @@
             </div>
             <div class="product-list">
                 <div class="product">
+                    <img class="product__image" src="../images/products/pizza/chetyre-syra.jpg" alt="">
                     <p class="product__name">Product Name</p>
                     <p class="product__description">Product Description</p>
                     <p class="product__price">100.-</p>
@@ -87,6 +89,7 @@
                     <button class="product__btn"><i class="fas fa-plus"></i></button>
                 </div>
                 <div class="product">
+                    <img class="product__image" src="../images/products/pizza/chetyre-syra.jpg" alt="">
                     <p class="product__name">Product Name</p>
                     <p class="product__description">Product Description</p>
                     <p class="product__price">100.-</p>
@@ -132,10 +135,9 @@
             </div>
         </div>
     </footer>
-
-    
     <script src="https://kit.fontawesome.com/ee9bbcd528.js" crossorigin="anonymous"></script>
-    <script src="js/online-food-scrypt.js"></script>
+    <script type="module" src="js/online-food-scrypt.js"></script>
+
 </body>
 
 </html>
