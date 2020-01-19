@@ -1,5 +1,5 @@
 export const productList = [{
-        photo: '../images/products/pizza/DSC_8740-002-Pitstsa-4-syra.jpg',
+        photo: './pizza/DSC_8740-002-Pitstsa-4-syra.jpg',
         title: '4 сыра',
         composition: [
             'Сыр камамбер',
@@ -11,7 +11,7 @@ export const productList = [{
         price: 125,
         weight: 520,
     }, {
-        photo: '../images/products/pizza/DhZBDqqwZzgTSYudncCZVQjOHHfQh9cs.jpg',
+        photo: './pizza/DhZBDqqwZzgTSYudncCZVQjOHHfQh9cs.jpg',
         title: 'Баварская пицца со сладким перцем',
         composition: [
             'красный сладкий перец',
@@ -25,7 +25,7 @@ export const productList = [{
         price: 140,
         weight: 850,
     }, {
-        photo: '../images/products/pizza/_1147-165.jpg',
+        photo: './pizza/_1147-165.jpg',
         title: 'Грибная пицца с колбасой и соусом',
         composition: [
             'Базилик',
@@ -38,7 +38,7 @@ export const productList = [{
         price: 130,
         weight: 530,
     }, {
-        photo: '../images/products/pizza/chetyre-syra.jpg',
+        photo: './pizza/chetyre-syra.jpg',
         title: '4 сыра с рукколой',
         composition: [
             'Руккола',
@@ -50,7 +50,7 @@ export const productList = [{
         price: 135,
         weight: 1024,
     }, {
-        photo: '../images/products/pizza/depositphotos_13341738-stock-photo-pizza-on-a-white-background.jpg',
+        photo: './pizza/depositphotos_13341738-stock-photo-pizza-on-a-white-background.jpg',
         title: 'Очень вкусная пицца',
         composition: [
             'колбаски',
@@ -60,7 +60,7 @@ export const productList = [{
         price: 150,
         weight: 860,
     }, {
-        photo: '../images/products/pizza/margarita0_1553587853.jpg',
+        photo: './pizza/margarita0_1553587853.jpg',
         title: 'Маргарита',
         composition: [
             'помидоры',
@@ -71,7 +71,7 @@ export const productList = [{
         price: 142,
         weight: 800,
     }, {
-        photo: '../images/products/pizza/pizza-margarita.jpg',
+        photo: './pizza/pizza-margarita.jpg',
         title: 'Маргарита +',
         composition: [
             'базилик',
@@ -84,7 +84,7 @@ export const productList = [{
         price: 149,
         weight: 715,
     }, {
-        photo: '../images/products/pizza/pizza-on-white-background-1629658.jpg',
+        photo: './pizza/pizza-on-white-background-1629658.jpg',
         title: 'пицца с салями',
         composition: [
             'оливки',
@@ -96,7 +96,7 @@ export const productList = [{
         price: 123,
         weight: 730,
     }, {
-        photo: '../images/products/pizza/pizza-pizza-margarita.jpg',
+        photo: './pizza/pizza-pizza-margarita.jpg',
         title: 'сырная маргарита',
         composition: [
             'томаты',
@@ -110,7 +110,7 @@ export const productList = [{
         price: 126,
         weight: 600,
     }, {
-        photo: '../images/products/pizza/pz.jpg',
+        photo: './pizza/pz.jpg',
         title: 'Грибная пицца на томатной основе',
         composition: [
             'шампиньоны',
@@ -122,7 +122,7 @@ export const productList = [{
         price: 200,
         weight: 960,
     }, {
-        photo: '../images/products/pizza/supreme.jpg',
+        photo: './pizza/supreme.jpg',
         title: 'Суприма',
         composition: [
             'сладкий перец',

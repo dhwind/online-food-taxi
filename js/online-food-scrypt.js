@@ -1,6 +1,4 @@
 'use strict'
-import { productList } from './product-list.js';
-
 //slider
 
 let sliderImage = document.querySelectorAll('.slider-image');
@@ -33,5 +31,3 @@ headerBtn.addEventListener('click', displayNavMenu);
           navigationMenu.classList.add('active-menu');
       } else navigationMenu.classList.remove('active-menu');
 }
-
-console.log(productList);
