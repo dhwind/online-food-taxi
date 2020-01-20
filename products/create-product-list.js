@@ -1,6 +1,5 @@
-import {
-    productList
-} from './product-list.js'
+'use strict'
+import { productList } from './product-list.js'
 
 document.addEventListener('DOMContentLoaded', createProduct)
 
