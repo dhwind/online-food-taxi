@@ -2,7 +2,7 @@ export const productList = [{
         photo: './pizza/DSC_8740-002-Pitstsa-4-syra.jpg',
         title: '4 сыра',
         composition: [
-            'Сыр камамбер',
+            'сыр камамбер',
             'сЫр моцареллА',
             'сыр фета',
             'СЫР ДОРБЛЮ',
