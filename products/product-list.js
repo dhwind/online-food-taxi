@@ -8,11 +8,11 @@ export const productList = [{
             'СЫР ДОРБЛЮ',
             'зелень',
         ],
-        price: 125,
+        price: 300,
         weight: 520,
     }, {
         photo: './pizza/DhZBDqqwZzgTSYudncCZVQjOHHfQh9cs.jpg',
-        title: 'Баварская пицца со сладким перцем',
+        title: 'баварская пицца со сладким перцем',
         composition: [
             'красный сладкий перец',
             'сЫр моцарелла',
@@ -22,7 +22,7 @@ export const productList = [{
             'мясо',
             'сыр фета',
         ],
-        price: 140,
+        price: 300,
         weight: 850,
     }, {
         photo: './pizza/_1147-165.jpg',
@@ -35,7 +35,7 @@ export const productList = [{
             'сыр российский',
             'соус грибной',
         ],
-        price: 130,
+        price: 300,
         weight: 530,
     }, {
         photo: './pizza/chetyre-syra.jpg',
@@ -47,7 +47,7 @@ export const productList = [{
             'сыр фета',
             'СЫР ДОРБЛЮ',
         ],
-        price: 135,
+        price: 300,
         weight: 1024,
     }, {
         photo: './pizza/depositphotos_13341738-stock-photo-pizza-on-a-white-background.jpg',
@@ -57,7 +57,7 @@ export const productList = [{
             'оливки',
             'СЫР',
         ],
-        price: 150,
+        price: 300,
         weight: 860,
     }, {
         photo: './pizza/margarita0_1553587853.jpg',
@@ -68,7 +68,7 @@ export const productList = [{
             'сыр пармезан',
             'сладкий томатный соус',
         ],
-        price: 142,
+        price: 300,
         weight: 800,
     }, {
         photo: './pizza/pizza-margarita.jpg',
