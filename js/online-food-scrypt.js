@@ -25,9 +25,9 @@ let navigationMenu = document.querySelector('.navigation');
 
 headerBtn.addEventListener('click', displayNavMenu);
 
-    function displayNavMenu() {
+function displayNavMenu() {
 
-     if (!navigationMenu.classList.contains('active-menu')) {
-          navigationMenu.classList.add('active-menu');
-      } else navigationMenu.classList.remove('active-menu');
+    if (!navigationMenu.classList.contains('active-menu')) {
+        navigationMenu.classList.add('active-menu');
+    } else navigationMenu.classList.remove('active-menu');
 }

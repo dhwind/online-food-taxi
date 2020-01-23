@@ -1,0 +1,41 @@
+[{
+    "photo": "images/products-images/pizza/DSC_8740-002-Pitstsa-4-syra.jpg",
+    "title": "promotions",
+    "composition": [
+        "сыр камамбер",
+        "сЫр моцареллА",
+        "сыр фета",
+        "СЫР ДОРБЛЮ",
+        "зелень"
+    ],
+    "price": "300",
+    "weight": "520"
+}, {
+    "photo": "images/products-images/pizza/DhZBDqqwZzgTSYudncCZVQjOHHfQh9cs.jpg",
+    "title": "баварская пицца со сладким перцем",
+    "composition": [
+        "красный сладкий перец",
+        "сЫр моцарелла",
+        "кукуруза",
+        "баварские колбаски",
+        "соленый огурец",
+        "мясо",
+        "сыр фета"
+    ],
+    "price": "300",
+    "weight": "850"
+}, {
+    "photo": "images/products-images/pizza/_1147-165.jpg",
+    "title": "Грибная пицца с колбасой и соусом",
+    "composition": [
+        "Базилик",
+        "грибы",
+        "маслины",
+        "копченая колбаса",
+        "сыр российский",
+        "соус грибной"
+    ],
+    "price": "300",
+    "weight": "530"
+}
+]

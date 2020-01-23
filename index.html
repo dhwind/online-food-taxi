@@ -23,8 +23,8 @@
             <div class="menu-btn">
                 <img src="images/panel-icons/btn_menu.svg">
             </div>
-            <div class="logo">
-                <a href="index.html"><img src="images/logo/FoodTaxi-logo.png" alt="logo"></a>
+            <div class="logo navigation-menu__point">
+                <a href="#"><img src="images/logo/FoodTaxi-logo.png" alt="logo"></a>
             </div>
             <div class="location">
                 <i class="fas fa-map-marker-alt"><a href="#">Sofia</a></i>
@@ -42,15 +42,15 @@
         </div>
     </header>
     <nav class="navigation">
-        <ul class="navigation__menu">
-            <li><a href="products/product-page.html"><img src="images/panel-icons/pizza.svg" alt="pizza"></a></li>
-            <li><img src="images/panel-icons/sushi.svg" alt="sushi"></li>
-            <li><img src="images/panel-icons/burger.svg" alt="burger"></li>
-            <li><img src="images/panel-icons/bowl.svg" alt="bowl"></li>
-            <li><img src="images/panel-icons/salad.svg" alt="salad"></li>
-            <li><img src="images/panel-icons/soup.svg" alt="soup"></li>
-            <li><img src="images/panel-icons/cake.svg" alt="cake"></li>
-            <li><img src="images/panel-icons/drink.svg" alt="drink"></li>
+        <ul class="navigation-menu">
+            <li class="navigation-menu__point"><img src="images/panel-icons/pizza.svg" alt="pizza"></a></li>
+            <li class="navigation-menu__point"><img src="images/panel-icons/sushi.svg" alt="sushi"></li>
+            <li class="navigation-menu__point"><img src="images/panel-icons/burger.svg" alt="burger"></li>
+            <li class="navigation-menu__point"><img src="images/panel-icons/bowl.svg" alt="bowl"></li>
+            <li class="navigation-menu__point"><img src="images/panel-icons/salad.svg" alt="salad"></li>
+            <li class="navigation-menu__point"><img src="images/panel-icons/soup.svg" alt="soup"></li>
+            <li class="navigation-menu__point"><img src="images/panel-icons/cake.svg" alt="cake"></li>
+            <li class="navigation-menu__point"><img src="images/panel-icons/drink.svg" alt="drink"></li>
         </ul>
     </nav>
     <main class="main">
@@ -73,9 +73,17 @@
             </div>
             <div class="category">
                 <p class="category__name">We recommend</p>
+                <div class="sort sort__remove">
+                    <p>Sort by: 
+                        <select>
+                            <option value="popularity">popularity</option>
+                            <option value="price">price</option>
+                            <option value="date">date</option>
+                        </select>
+                    </p>
+                </div>
             </div>
             <div class="product-list">
-                
             </div>
         </div>
     </main>
@@ -118,7 +126,7 @@
     </footer>
     <script src="https://kit.fontawesome.com/ee9bbcd528.js" crossorigin="anonymous"></script>
     <script src="js/online-food-scrypt.js"></script>
-
+    <script type="module" src="products/load-products-data.js"></script>
 </body>
 
 </html>

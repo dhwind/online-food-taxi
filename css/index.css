@@ -82,16 +82,16 @@
   .navigation.active-menu {
     opacity: 1;
     transform: translateX(0%); }
-  .navigation__menu {
+  .navigation .navigation-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; }
-    .navigation__menu li {
+    .navigation .navigation-menu li {
       padding: 18px;
       border-radius: 100%;
       margin: 15px auto; }
-      .navigation__menu li:hover {
+      .navigation .navigation-menu li:hover {
         cursor: pointer;
         background-color: #bbbbbb; }
 
@@ -109,6 +109,14 @@
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .main .content__remove {
+      display: none; }
+    .main .content .error-message {
+      color: #000;
+      font-size: 40px;
+      font-weight: 700;
+      padding-bottom: 400px;
+      margin-right: 50px; }
     .main .content .slider {
       position: relative;
       display: flex;
@@ -119,6 +127,8 @@
       border-radius: 25px;
       height: 400px;
       width: 100%; }
+      .main .content .slider__remove {
+        display: none; }
       .main .content .slider .slider-image {
         position: absolute;
         border-radius: inherit;
@@ -169,6 +179,8 @@
         color: #222124; }
       .main .content .category .sort {
         margin-top: 15px; }
+        .main .content .category .sort__remove {
+          display: none; }
         .main .content .category .sort p {
           font-size: 14px; }
         .main .content .category .sort select {
@@ -217,7 +229,7 @@
           text-align: center;
           font-size: 38px;
           color: #222124;
-          margin: 0 auto 80px auto; }
+          margin-bottom: 80px; }
         .main .content .product-list .product__btn {
           justify-content: center;
           background-color: #6A45B6;
@@ -316,12 +328,13 @@
     height: auto;
     opacity: 0;
     position: relative;
+    flex-direction: row;
     display: none; }
-    .navigation .active-menu {
+    .navigation.active-menu {
       display: block; }
-    .navigation__menu {
+    .navigation .navigation-menu {
       flex-direction: row; }
-      .navigation__menu li {
+      .navigation .navigation-menu li {
         margin: 5px auto; } }
 @media only screen and (max-width: 600px) {
   .navigation__menu li {

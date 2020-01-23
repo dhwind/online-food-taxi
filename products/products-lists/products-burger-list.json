@@ -1,0 +1,140 @@
+[{
+    "photo": "images/products-images/pizza/DSC_8740-002-Pitstsa-4-syra.jpg",
+    "title": "JSON 3",
+    "composition": [
+        "сыр камамбер",
+        "сЫр моцареллА",
+        "сыр фета",
+        "СЫР ДОРБЛЮ",
+        "зелень"
+    ],
+    "price": "300",
+    "weight": "520"
+}, {
+    "photo": "images/products-images/pizza/DhZBDqqwZzgTSYudncCZVQjOHHfQh9cs.jpg",
+    "title": "баварская пицца со сладким перцем",
+    "composition": [
+        "красный сладкий перец",
+        "сЫр моцарелла",
+        "кукуруза",
+        "баварские колбаски",
+        "соленый огурец",
+        "мясо",
+        "сыр фета"
+    ],
+    "price": "300",
+    "weight": "850"
+}, {
+    "photo": "images/products-images/pizza/_1147-165.jpg",
+    "title": "Грибная пицца с колбасой и соусом",
+    "composition": [
+        "Базилик",
+        "грибы",
+        "маслины",
+        "копченая колбаса",
+        "сыр российский",
+        "соус грибной"
+    ],
+    "price": "300",
+    "weight": "530"
+}, {
+    "photo": "images/products-images/pizza/chetyre-syra.jpg",
+    "title": "4 сыра с рукколой",
+    "composition": [
+        "Руккола",
+        "Сыр камамбер",
+        "сЫр моцареллА",
+        "сыр фета",
+        "СЫР ДОРБЛЮ"
+    ],
+    "price": "300",
+    "weight": "1024"
+}, {
+    "photo": "images/products-images/pizza/depositphotos_13341738-stock-photo-pizza-on-a-white-background.jpg",
+    "title": "Очень вкусная пицца",
+    "composition": [
+        "колбаски",
+        "оливки",
+        "СЫР"
+    ],
+    "price": "300",
+    "weight": "860"
+}, {
+    "photo": "images/products-images/pizza/margarita0_1553587853.jpg",
+    "title": "Маргарита",
+    "composition": [
+        "помидоры",
+        "сыр моцарелла",
+        "сыр пармезан",
+        "сладкий томатный соус"
+    ],
+    "price": "300",
+    "weight": "800"
+}, {
+    "photo": "images/products-images/pizza/pizza-margarita.jpg",
+    "title": "Маргарита +",
+    "composition": [
+        "базилик",
+        "сладкий томатный соус",
+        "помидоры",
+        "сыр моцарелла",
+        "сыр пармезан",
+        "сыр пармезан"
+    ],
+    "price": "149",
+    "weight": "715"
+}, {
+    "photo": "images/products-images/pizza/pizza-on-white-background-1629658.jpg",
+    "title": "пицца с салями",
+    "composition": [
+        "оливки",
+        "копченая колбаса салями",
+        "сыр российский",
+        "сыр пармеджано",
+        "соус грибной"
+    ],
+    "price": "123",
+    "weight": "730"
+}, {
+    "photo": "images/products-images/pizza/pizza-pizza-margarita.jpg",
+    "title": "сырная маргарита",
+    "composition": [
+        "томаты",
+        "соус помадоро",
+        "Сыр камамбер",
+        "сЫр моцареллА",
+        "сыр фета",
+        "СЫР ДОРБЛЮ",
+        "зелень"
+    ],
+    "price": "126",
+    "weight": "600"
+}, {
+    "photo": "images/products-images/pizza/pz.jpg",
+    "title": "Грибная пицца на томатной основе",
+    "composition": [
+        "шампиньоны",
+        "соус из перебитых томатов",
+        "сыр моцарелла",
+        "СЫР пармезан",
+        "петрушка"
+    ],
+    "price": "200",
+    "weight": "960"
+}, {
+    "photo": "images/products-images/pizza/supreme.jpg",
+    "title": "Суприма",
+    "composition": [
+        "сладкий перец",
+        "маслины",
+        "бекон",
+        "салями",
+        "луковые кольца",
+        "шампиньоны",
+        "свежие томаты",
+        "томатная основа"
+    ],
+    "price": "164",
+    "weight": "900"
+}
+]
