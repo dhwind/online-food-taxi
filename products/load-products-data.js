@@ -13,7 +13,7 @@ let categoryName = [
 ];
 //URLs with data of JSON files
 let dataURL = [
-    'http://127.0.0.1:5500/products/products-lists/promotions.json',
+    'http://127.0.0.1:5500/products/products-lists/promotons.json',
     'http://127.0.0.1:5500/products/products-lists/products-pizza-list.json',
     'http://127.0.0.1:5500/products/products-lists/products-sushi-list.json',
     'http://127.0.0.1:5500/products/products-lists/products-burger-list.json',
@@ -37,11 +37,10 @@ let errorMessage = document.createElement('p');
 
 errorMessage.setAttribute('class', 'error-message');
 errorMessage.innerHTML = `ERROR 404! Wrong URL adress.`;
-console.log(contentBlock.contains(errorMessage));
 
 //event listener for loading initial content
 document.addEventListener("DOMContentLoaded", function () {
-    requestResponse = createRequest('GET', dataURL[0]);
+    requestResponse = createRequest(dataURL[0]);
     requestResponse.then(data => {
         deleteProductsList();
         categorySort.classList.add('sort__remove');
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 for (let i = 0; i < menuPoint.length; i++) {
     menuPoint[i].addEventListener('click', function () {
 
-        requestResponse = createRequest('GET', dataURL[i]);
+        requestResponse = createRequest(dataURL[i]);
         requestResponse.then(data => {
             deleteProductsList();
             if (i == 0) { //deletes sort in main page and adds slider
@@ -75,7 +74,6 @@ for (let i = 0; i < menuPoint.length; i++) {
 
             if (!contentBlock.contains(errorMessage)) { //checks does the content block already have error message
                 contentBlock.appendChild(errorMessage);
-
             }
         });
     });

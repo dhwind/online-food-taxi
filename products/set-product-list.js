@@ -52,22 +52,8 @@ export function deleteProductsList() {
     }
 }
 //request to get data from JSON files
-export function createRequest(method, URL) {
-    return new Promise((res, rej) => {
-        const request = new XMLHttpRequest();
-        request.open(method, URL);
-        let response = '';
-        request.responseType = 'json';
-
-        request.onload = () => {
-            if(request.status <= 400){
-                response = request.response;
-                res(response);
-            }
-            
-            else rej(console.error("Wrong URL adress "));
-        }
-
-        request.send();
-    });
+export function createRequest(URL) {
+    let requestResponse = fetch(URL).then(response => response.json());
+    return requestResponse;
 }
+
