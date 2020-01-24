@@ -13,7 +13,7 @@ let categoryName = [
 ];
 //URLs with data of JSON files
 let dataURL = [
-    'http://127.0.0.1:5500/products/products-lists/promotons.json',
+    'http://127.0.0.1:5500/products/products-lists/promotions.json',
     'http://127.0.0.1:5500/products/products-lists/products-pizza-list.json',
     'http://127.0.0.1:5500/products/products-lists/products-sushi-list.json',
     'http://127.0.0.1:5500/products/products-lists/products-burger-list.json',
