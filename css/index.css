@@ -177,6 +177,8 @@
       .main .content .category__name {
         font-size: 36px;
         color: #222124; }
+        .main .content .category__name__remove {
+          display: none; }
       .main .content .category .sort {
         margin-top: 15px; }
         .main .content .category .sort__remove {

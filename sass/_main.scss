@@ -241,6 +241,10 @@
             &__name {
                 font-size: 36px;
                 color: $paragraphColor;
+
+                &__remove {
+                    display: none;
+                }
             }
 
             .sort {

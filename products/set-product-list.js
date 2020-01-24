@@ -5,6 +5,9 @@ export function createProductsList(categoryName, productList) {
     let categoryBlock = document.querySelector('.category');
     const listTitle = document.createElement('p');
     listTitle.innerHTML = `<p class="category__name">${categoryName}</p>`;
+    if(listTitle.classList.contains('category__name__remove')){
+        listTitle.classList.remove('category__name__remove');
+    }
     categoryBlock.prepend(listTitle);
 
     const productItems = productList.map(element => {
@@ -29,21 +32,23 @@ export function createProductsList(categoryName, productList) {
         return elem;
     });
 
-    let container = document.querySelector(".product-list");
+    let productListBlock = document.querySelector(".product-list");
     for (const product of productItems) {
-        container.appendChild(product);
+        productListBlock.appendChild(product);
     }
 }
 //deleting of excess product elements for loading new
 export function deleteProductsList() {
+
     const elem = document.querySelectorAll('.product');
     const listTitle = document.querySelector('.category__name');
     let categorySort = document.querySelector('.sort');
+
     categorySort.classList.add('sort__remove');
-    listTitle.remove();
+    listTitle.classList.add('category__name__remove'); //removing excess category name
 
     for(let i = 0; i < elem.length; i++) {
-        elem[i].remove();
+        elem[i].remove(); //removing excess elements
     }
 }
 //request to get data from JSON files
@@ -60,25 +65,9 @@ export function createRequest(method, URL) {
                 res(response);
             }
             
-            else rej(promiseError());
+            else rej(console.error("Wrong URL adress "));
         }
 
         request.send();
     });
-}
-
-function promiseError(){
-
-    deleteProductsList();
-    
-    let contentBlock = document.querySelector('.content');
-    let errorMessage = document.createElement('p');
-    errorMessage.setAttribute('class', 'error-message');
-    errorMessage.innerHTML = `ERROR 404`;
-
-    for(let i = 0; i < contentBlock.children.length; i++){
-        console.log(contentBlock.children[i]);
-    }
-
-    contentBlock.appendChild(errorMessage);
 }
