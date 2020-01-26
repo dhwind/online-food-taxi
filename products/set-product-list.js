@@ -1,17 +1,43 @@
 'use strict'
 //creating product elements
-export function createProductsList(categoryName, productList) {
+import { Slider } from '../slider/Slider.js';
 
-    let categoryBlock = document.querySelector('.category');
-    const listTitle = document.createElement('p');
-    listTitle.innerHTML = `<p class="category__name">${categoryName}</p>`;
-    if(listTitle.classList.contains('category__name__remove')){
-        listTitle.classList.remove('category__name__remove');
+
+export function createContent(categoryName, productList) {
+    if(categoryName == 'We recommend') {
+        createSlider();
     }
-    categoryBlock.prepend(listTitle);
+    const contentBlock = document.querySelector('.content');
+    contentBlock.appendChild(createCategory(categoryName));
+    contentBlock.appendChild(createProductList(productList));
+}
 
+//deleting of excess product elements for loading new
+export function deleteContent() {
+    
+}
+//request to get data from JSON files
+export function createRequest(URL) {
+    const requestResponse = fetch(URL).then(response => response.json());
+    return requestResponse;
+}
+
+function createSlider() {
+    const slider = new Slider();
+    slider.createSlides();
+    slider.createBtns();
+}
+
+function createCategory(categoryName) {
+    const categoryBlock = document.createElement('div');
+    categoryBlock.setAttribute('class', 'category');
+    categoryBlock.innerHTML = `<p class="category__name">${categoryName}</p>`;
+    return categoryBlock;
+}
+
+function createProductList(productList) {
     const productItems = productList.map(element => {
-        let elem = document.createElement("div");
+        const elem = document.createElement("div");
         elem.setAttribute("class", "product");
         elem.innerHTML = `
             <img class="product__image" src="${element.photo}" alt="">
@@ -27,33 +53,16 @@ export function createProductsList(categoryName, productList) {
                     descriptionStr = descriptionStr.toLowerCase()).join( ", " )}
             </p>
             <p class="product__price">${element.price}$</p>
-            <button class="product__btn"><i class="fas fa-plus"></i></button>
+            <button class="product__btn" id="${element.id}"><i class="fas fa-plus"></i></button>
+            <div class="product__weight"><img src="../images/products-images/weight.svg"><p>${element.weight}g</p></div>
             `;
         return elem;
     });
 
-    let productListBlock = document.querySelector(".product-list");
-    for (const product of productItems) {
+    const productListBlock = document.createElement('div');
+    productListBlock.setAttribute('class', 'product-list');
+    for (let product of productItems) {
         productListBlock.appendChild(product);
     }
+    return productListBlock;
 }
-//deleting of excess product elements for loading new
-export function deleteProductsList() {
-
-    const elem = document.querySelectorAll('.product');
-    const listTitle = document.querySelector('.category__name');
-    let categorySort = document.querySelector('.sort');
-
-    categorySort.classList.add('sort__remove');
-    listTitle.classList.add('category__name__remove'); //removing excess category name
-
-    for(let i = 0; i < elem.length; i++) {
-        elem[i].remove(); //removing excess elements
-    }
-}
-//request to get data from JSON files
-export function createRequest(URL) {
-    let requestResponse = fetch(URL).then(response => response.json());
-    return requestResponse;
-}
-

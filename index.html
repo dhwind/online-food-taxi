@@ -37,7 +37,7 @@
                 <p><i class="far fa-clock"></i> Work hours: 24/7</p>
             </div>
             <div class="cart">
-                <img src="images/panel-icons/full-cart.svg" alt="cart">
+                <img id="cart-modal" src="images/panel-icons/full-cart.svg" alt="cart">
             </div>
         </div>
     </header>
@@ -55,36 +55,6 @@
     </nav>
     <main class="main">
         <div class="content">
-            <div class="slider">
-                <div class="slider-image"><img src="/images/slider/pizza-background.jpg" alt=""></div>
-                <div class="slider-image slider-image__active"><img src="/images/slider/burger-background.jpg" alt=""></div>
-                <div class="slider-image"><img src="/images/slider/soup-background.jpg" alt=""></div>
-                <div class="slider-image"><img src="/images/slider/sushi-background.jpg" alt=""></div>
-                <div class="slider-btns">
-                    <input type="radio" name="slider button" id="slider-btn-1">
-                    <label class="slider-button" for="slider-btn-1"></label>
-                    <input checked type="radio" name="slider button" id="slider-btn-2">
-                    <label class="slider-button" for="slider-btn-2"></label>
-                    <input type="radio" name="slider button" id="slider-btn-3">
-                    <label class="slider-button" for="slider-btn-3"></label>
-                    <input type="radio" name="slider button" id="slider-btn-4">
-                    <label class="slider-button" for="slider-btn-4"></label>
-                </div>
-            </div>
-            <div class="category">
-                <p class="category__name">We recommend</p>
-                <div class="sort sort__remove">
-                    <p>Sort by: 
-                        <select>
-                            <option value="popularity">popularity</option>
-                            <option value="price">price</option>
-                            <option value="date">date</option>
-                        </select>
-                    </p>
-                </div>
-            </div>
-            <div class="product-list">
-            </div>
         </div>
     </main>
     <footer class="footer">
@@ -124,9 +94,18 @@
             </div>
         </div>
     </footer>
+    <div class="main-modal-window">
+        <div>
+            <span class="close-modal-window"></span>
+        </div>
+        <div class="cart-modal-window">
+            <span class="close-modal-window">&times;</span>
+        </div>
+    </div>
     <script src="https://kit.fontawesome.com/ee9bbcd528.js" crossorigin="anonymous"></script>
     <script src="js/online-food-scrypt.js"></script>
-    <script type="module" src="products/load-products-data.js"></script>
+    <script type="module" src="./products/load-products-data.js"></script>
+    <script type="module" src="./cart/cart.js"></script>
 </body>
 
 </html>

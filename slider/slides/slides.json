@@ -1,0 +1,19 @@
+[
+    {
+        "url": "images/slider/sushi-background.jpg",
+        "id" : "slider-btn-1"
+    },
+    {
+        "url": "images/slider/soup-background.jpg",
+        
+        "id" : "slider-btn-2"
+    },
+    {
+        "url": "images/slider/pizza-background.jpg",
+        "id" : "slider-btn-3"
+    },
+    {
+        "url": "images/slider/burger-background.jpg",
+        "id" : "slider-btn-4"
+    }
+]

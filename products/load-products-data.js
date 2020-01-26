@@ -1,19 +1,19 @@
 'use strict'
 import {
-    createProductsList,
-    deleteProductsList,
+    createContent,
+    deleteContent,
     createRequest
 } from './set-product-list.js';
 
 //name of category
-let categoryName = [
+const categoryName = [
     'We recommend', 'Pizza', 'Sushi',
     'Burgers', 'Noodles', 'Salads',
     'Soups', 'Cakes', 'Drinks'
 ];
 //URLs with data of JSON files
-let dataURL = [
-    'http://127.0.0.1:5500/products/products-lists/promotons.json',
+const dataURL = [
+    'http://127.0.0.1:5500/products/products-lists/promotions.json',
     'http://127.0.0.1:5500/products/products-lists/products-pizza-list.json',
     'http://127.0.0.1:5500/products/products-lists/products-sushi-list.json',
     'http://127.0.0.1:5500/products/products-lists/products-burger-list.json',
@@ -27,50 +27,35 @@ let dataURL = [
 //navigation menu points and logotype point(refers to a main page)
 const menuPoint = document.querySelectorAll('.navigation-menu__point');
 
-let imagesSlider = document.querySelector('.slider');
-let categorySort = document.querySelector('.sort');
-
-let requestResponse = '';
-
-let contentBlock = document.querySelector('.content');
-let errorMessage = document.createElement('p');
+const contentBlock = document.querySelector('.content');
+const errorMessage = document.createElement('p');
 
 errorMessage.setAttribute('class', 'error-message');
 errorMessage.innerHTML = `ERROR 404! Wrong URL adress.`;
 
+let requestResponse = '';
 //event listener for loading initial content
 document.addEventListener("DOMContentLoaded", function () {
     requestResponse = createRequest(dataURL[0]);
     requestResponse.then(data => {
-        deleteProductsList();
-        categorySort.classList.add('sort__remove');
-        createProductsList(categoryName[0], data);
+        deleteContent();
+        createContent(categoryName[0], data);
     }).catch(() => { //deletes all content in initial load and adds error message
-        deleteProductsList();
-        imagesSlider.classList.add('slider__remove');
+        deleteContent();
         contentBlock.appendChild(errorMessage);
     });
 });
 
 //loop for loading content
-for (let i = 0; i < menuPoint.length; i++) {
-    menuPoint[i].addEventListener('click', function () {
+for (const [index, point] of menuPoint.entries()) {
+    point.addEventListener('click', function () {
 
-        requestResponse = createRequest(dataURL[i]);
+        requestResponse = createRequest(dataURL[index]);
         requestResponse.then(data => {
-            deleteProductsList();
-            if (i == 0) { //deletes sort in main page and adds slider
-                categorySort.classList.add('sort__remove');
-                imagesSlider.classList.remove('slider__remove');
-            } else { //deletes slider and adds sort on product pages
-                categorySort.classList.remove('sort__remove');
-                imagesSlider.classList.add('slider__remove');
-            }
-
-            createProductsList(categoryName[i], data); //adds content 
+            deleteContent();
+            createContent(categoryName[index], data); //adds content 
         }).catch(() => { //if during loading content error was happened, deletes all content and adds error message
-            deleteProductsList();
-            imagesSlider.classList.add('slider__remove');
+            deleteContent();
 
             if (!contentBlock.contains(errorMessage)) { //checks does the content block already have error message
                 contentBlock.appendChild(errorMessage);

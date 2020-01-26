@@ -9,7 +9,8 @@
         "зелень"
     ],
     "price": "300",
-    "weight": "520"
+    "weight": "520",
+    "id": "cake-1"
 }, {
     "photo": "images/products-images/pizza/DhZBDqqwZzgTSYudncCZVQjOHHfQh9cs.jpg",
     "title": "баварская пицца со сладким перцем",

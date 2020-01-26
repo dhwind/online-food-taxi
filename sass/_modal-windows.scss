@@ -1,0 +1,50 @@
+.main-modal-window {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+
+    .close-modal-window {
+        float: right;
+        cursor: pointer;
+        color: $grayColor;
+        font-size: 60px;
+
+        &:hover {
+            transition: 0.5s;
+            color: $blackColor;
+        }
+        
+    }
+
+    .cart-modal-window {
+
+        display: none;
+        height: 100px;
+        width: 40%;
+        position: fixed;
+        background-color: $whiteColor;
+        margin: 15% auto;
+        padding: 5px 10px 10px 10px;
+
+        p {
+            font-size: 20px;
+            padding: 20px;
+            color: rgb(75, 73, 73);
+        }
+    }
+}
+
+.active-main-modal-window {
+    display: flex !important;
+}
+
+.active-modal-window {
+    display: block !important;
+}
