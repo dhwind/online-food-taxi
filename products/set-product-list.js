@@ -2,11 +2,8 @@
 //creating product elements
 import { Slider } from '../slider/Slider.js';
 
-
 export function createContent(categoryName, productList) {
-    if(categoryName == 'We recommend') {
-        createSlider();
-    }
+    if (categoryName == 'We recommend') displaySlider();
     const contentBlock = document.querySelector('.content');
     contentBlock.appendChild(createCategory(categoryName));
     contentBlock.appendChild(createProductList(productList));
@@ -14,7 +11,18 @@ export function createContent(categoryName, productList) {
 
 //deleting of excess product elements for loading new
 export function deleteContent() {
-    
+    const productListBlock = document.querySelector('.product-list');
+    const categoryBlock = document.querySelector('.category');
+    const sliderBlock = document.querySelector('.slider');
+
+    if (sliderBlock) {
+        sliderBlock.classList.remove('slider__active');
+    }
+
+    if (categoryBlock || productListBlock) {
+        productListBlock.remove();
+        categoryBlock.remove();
+    }
 }
 //request to get data from JSON files
 export function createRequest(URL) {
@@ -22,10 +30,34 @@ export function createRequest(URL) {
     return requestResponse;
 }
 
+export function displayErrorMessage() {
+    const contentBlock = document.querySelector('.content');
+    const errorMessage = document.createElement('p');
+    errorMessage.setAttribute('class', 'error-message');
+    errorMessage.innerHTML = 'ERROR 404! URL is not found!';
+    if (!contentBlock.contains(errorMessage)) {
+        contentBlock.appendChild(errorMessage);
+    }
+}
+
+export function deleteErrorMessage() {
+    const contentBlock = document.querySelector('.content');
+    const errorMessage = document.querySelector('.error-message');
+    if (contentBlock.contains(errorMessage)) {
+        contentBlock.removeChild(errorMessage);
+    }
+}
+
 function createSlider() {
     const slider = new Slider();
     slider.createSlides();
     slider.createBtns();
+}
+
+function displaySlider() {
+    if (!document.querySelector('.slider')) createSlider();
+    const sliderBlock = document.querySelector('.slider');
+    sliderBlock.classList.add('slider__active');
 }
 
 function createCategory(categoryName) {
