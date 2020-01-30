@@ -64,7 +64,22 @@ function createCategory(categoryName) {
     const categoryBlock = document.createElement('div');
     categoryBlock.setAttribute('class', 'category');
     categoryBlock.innerHTML = `<p class="category__name">${categoryName}</p>`;
+    if(categoryName != 'We recommend') categoryBlock.appendChild(createSort());
     return categoryBlock;
+}
+
+function createSort(){
+    const sortBy = document.createElement('div');
+    sortBy.setAttribute('class', 'sort');
+    sortBy.innerHTML = `
+        <p>Sort by: 
+            <select>
+                <option value=popularity"">popularity</option>
+                <option value="price">price</option>
+                <option value="weight">weight</option>
+            </select>
+        </p>`;
+    return sortBy;
 }
 
 function filterText(str){
