@@ -67,6 +67,11 @@ function createCategory(categoryName) {
     return categoryBlock;
 }
 
+function filterText(str){
+    str = str[0].toUpperCase() + str.slice(1).toLowerCase();
+    return str;
+}
+
 function createProductList(productList) {
     const productItems = productList.map(element => {
         const elem = document.createElement("div");
@@ -74,15 +79,12 @@ function createProductList(productList) {
         elem.innerHTML = `
             <img class="product__image" src="${element.photo}" alt="">
             <p class="product__name">
-                ${element.title.split("")
-                               .map((titleStr, index) => titleStr = (index === 0) ? 
-                                        titleStr.toUpperCase() : 
-                                        titleStr.toLowerCase()).join("")}
+                ${filterText(element.title)}
             </p>
             <p class="product__description">
-            ${element.composition.map((descriptionStr, index) => descriptionStr = (index === 0) ? 
-                    descriptionStr = descriptionStr[0].toUpperCase() + descriptionStr.slice(1).toLowerCase() : 
-                    descriptionStr = descriptionStr.toLowerCase()).join( ", " )}
+            ${element.composition.map((el, index) => { 
+                return (index == 0) ? filterText(el) : el.toLowerCase();
+                }).join( ", " )}
             </p>
             <p class="product__price">${element.price}$</p>
             <button class="product__btn" id="${element.id}"><i class="fas fa-plus"></i></button>
