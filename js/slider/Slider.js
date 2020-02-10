@@ -1,7 +1,7 @@
 export class Slider {
     constructor() {
         this.contentBlock = document.querySelector('.content');
-        this.slidesURL = 'http://127.0.0.1:5500/slider/slides/slides.json';
+        this.slidesURL = 'http://127.0.0.1:5500/js/slider/slides/slides.json';
         this.slidesArr = fetch(this.slidesURL).then(response => response.json());
         this.sliderImages = document.createElement('div');
         this.sliderImages.setAttribute('class', 'slider');

@@ -10,7 +10,7 @@
     ],
     "price": "300",
     "weight": "520",
-    "id": "cake-1"
+    "id": "promo-1"
 }, {
     "photo": "images/products-images/pizza/DhZBDqqwZzgTSYudncCZVQjOHHfQh9cs.jpg",
     "title": "баварская пицца со сладким перцем",
@@ -23,8 +23,9 @@
         "мясо",
         "сыр фета"
     ],
-    "price": "300",
-    "weight": "850"
+    "price": "238",
+    "weight": "850",
+    "id": "promo-2"
 }, {
     "photo": "images/products-images/pizza/_1147-165.jpg",
     "title": "Грибная пицца с колбасой и соусом",
@@ -37,6 +38,7 @@
         "соус грибной"
     ],
     "price": "300",
-    "weight": "530"
+    "weight": "530",
+    "id": "promo-3"
 }
 ]

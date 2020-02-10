@@ -91,6 +91,7 @@ function createProductList(productList) {
     const productItems = productList.map(element => {
         const elem = document.createElement("div");
         elem.setAttribute("class", "product");
+        elem.setAttribute('id', element.id);
         elem.innerHTML = `
             <img class="product__image" src="${element.photo}" alt="">
             <p class="product__name">
@@ -102,7 +103,7 @@ function createProductList(productList) {
                 }).join( ", " )}
             </p>
             <p class="product__price">${element.price}$</p>
-            <button class="product__btn" id="${element.id}"><i class="fas fa-plus"></i></button>
+            <button class="product__btn"><i class="fas fa-plus"></i></button>
             <div class="product__weight"><img src="../images/products-images/weight.svg"><p>${element.weight}g</p></div>
             `;
         return elem;

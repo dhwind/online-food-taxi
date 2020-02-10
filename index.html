@@ -95,17 +95,20 @@
         </div>
     </footer>
     <div class="main-modal-window">
-        <div>
-            <span class="close-modal-window"></span>
-        </div>
         <div class="cart-modal-window">
+            <p class="cart-modal-window__empty cart-modal-window__empty__active">Your cart is empty</p>
             <span class="close-modal-window">&times;</span>
+            <div class="product-field">
+                
+            </div>
+            <p class="total-price"></p>
+            <button class="checkout-btn">Checkout</button>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/ee9bbcd528.js" crossorigin="anonymous"></script>
-    <script type="module" src="./products/load-products-data.js"></script>
-    <script type="module" src="./cart/cart.js"></script>
-    <script src="js/online-food-scrypt.js"></script>
+    <script type="module" src="js/products/load-products-data.js"></script>
+    <script type="module" src="js/cart/cart.js"></script>
+    <script src="js/slider/set-slide.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 [{
     "photo": "images/products-images/pizza/DSC_8740-002-Pitstsa-4-syra.jpg",
-    "title": "JSON 7",
+    "title": "JSON 8",
     "composition": [
         "сыр камамбер",
         "сЫр моцареллА",
@@ -9,7 +9,8 @@
         "зелень"
     ],
     "price": "300",
-    "weight": "520"
+    "weight": "520",
+    "id": "drink-1"
 }, {
     "photo": "images/products-images/pizza/DhZBDqqwZzgTSYudncCZVQjOHHfQh9cs.jpg",
     "title": "баварская пицца со сладким перцем",
@@ -23,7 +24,8 @@
         "сыр фета"
     ],
     "price": "300",
-    "weight": "850"
+    "weight": "850",
+    "id": "drink-2"
 }, {
     "photo": "images/products-images/pizza/_1147-165.jpg",
     "title": "Грибная пицца с колбасой и соусом",
@@ -36,7 +38,8 @@
         "соус грибной"
     ],
     "price": "300",
-    "weight": "530"
+    "weight": "530",
+    "id": "drink-3"
 }, {
     "photo": "images/products-images/pizza/chetyre-syra.jpg",
     "title": "4 сыра с рукколой",
@@ -48,7 +51,8 @@
         "СЫР ДОРБЛЮ"
     ],
     "price": "300",
-    "weight": "1024"
+    "weight": "1024",
+    "id": "drink-4"
 }, {
     "photo": "images/products-images/pizza/depositphotos_13341738-stock-photo-pizza-on-a-white-background.jpg",
     "title": "Очень вкусная пицца",
@@ -58,7 +62,8 @@
         "СЫР"
     ],
     "price": "300",
-    "weight": "860"
+    "weight": "860",
+    "id": "drink-5"
 }, {
     "photo": "images/products-images/pizza/margarita0_1553587853.jpg",
     "title": "Маргарита",
@@ -69,7 +74,8 @@
         "сладкий томатный соус"
     ],
     "price": "300",
-    "weight": "800"
+    "weight": "800",
+    "id": "drink-6"
 }, {
     "photo": "images/products-images/pizza/pizza-margarita.jpg",
     "title": "Маргарита +",
@@ -82,7 +88,8 @@
         "сыр пармезан"
     ],
     "price": "149",
-    "weight": "715"
+    "weight": "715",
+    "id": "drink-7"
 }, {
     "photo": "images/products-images/pizza/pizza-on-white-background-1629658.jpg",
     "title": "пицца с салями",
@@ -94,7 +101,8 @@
         "соус грибной"
     ],
     "price": "123",
-    "weight": "730"
+    "weight": "730",
+    "id": "drink-8"
 }, {
     "photo": "images/products-images/pizza/pizza-pizza-margarita.jpg",
     "title": "сырная маргарита",
@@ -108,7 +116,8 @@
         "зелень"
     ],
     "price": "126",
-    "weight": "600"
+    "weight": "600",
+    "id": "drink-9"
 }, {
     "photo": "images/products-images/pizza/pz.jpg",
     "title": "Грибная пицца на томатной основе",
@@ -120,7 +129,8 @@
         "петрушка"
     ],
     "price": "200",
-    "weight": "960"
+    "weight": "960",
+    "id": "drink-10"
 }, {
     "photo": "images/products-images/pizza/supreme.jpg",
     "title": "Суприма",
@@ -135,6 +145,7 @@
         "томатная основа"
     ],
     "price": "164",
-    "weight": "900"
+    "weight": "900",
+    "id": "drink-11"
 }
 ]
