@@ -31,37 +31,21 @@ export class Cart extends Modal {
     constructor(modalWindow, targetElement) {
         super(modalWindow, targetElement);
         this.productField = document.querySelector('.product-field');
+        this.checkoutBtn = document.querySelector('.checkout-btn');
         this.totalPrice = document.querySelector('.total-price');
         this.countPrice = 0;
-        this.checkoutBtn = document.querySelector('.checkout-btn');
     }
 
-    addContent(productItem) { //sets cart items by data of product item
+    addInStorage(productItem) { //sets product items in localStorage
         this.productItem = [productItem.children[1].innerHTML, productItem.children[3].innerHTML];
         localStorage.setItem(productItem.getAttribute('id'), this.productItem);
-        this.selectedProduct = document.createElement('div');
-        this.selectedProduct.setAttribute('class', 'selected-product');
-        this.selectedProduct.setAttribute('id', `${productItem.getAttribute('id')}`);
-        this.selectedProduct.innerHTML = `
-                <p class="selected-product__title">${localStorage.getItem(this.selectedProduct.getAttribute('id')).split(',')[0]}</p>
-                <span class="selected-product__border"></span>
-                <p class="selected-product__price">${localStorage.getItem(this.selectedProduct.getAttribute('id')).split(',')[1]}</p>
-                <span class="selected-product__border"></span>
-                <div class="select-buttons">
-                    <button class="select-buttons__buy">BUY NOW</button>
-                    <button class="select-buttons__remove">REMOVE</button>
-                </div>
-            `;
-        this.productField.appendChild(this.selectedProduct);
-        this.countPrice += +localStorage.getItem(this.selectedProduct.getAttribute('id')).split(',')[1].slice(0, -1);
-        this.totalPrice.innerHTML = `Total price: ${this.countPrice}$`;
-
+        return productItem.getAttribute('id');
     }
 
-    reloadedContent(storageKey){ //sets cart items by data of localStorage
+    addContent(storageKey) { //creates cart items by data from localStorage and adds them in cart
         this.selectedProduct = document.createElement('div');
         this.selectedProduct.setAttribute('class', 'selected-product');
-        this.selectedProduct.setAttribute('id', `${localStorage.key(storageKey)}`);
+        this.selectedProduct.setAttribute('id', `${(typeof(storageKey) == "number") ? localStorage.key(storageKey) : storageKey}`);
         this.selectedProduct.innerHTML = `
                 <p class="selected-product__title">${localStorage.getItem(this.selectedProduct.getAttribute('id')).split(',')[0]}</p>
                 <span class="selected-product__border"></span>
@@ -72,9 +56,10 @@ export class Cart extends Modal {
                     <button class="select-buttons__remove">REMOVE</button>
                 </div>
             `;
-        this.productField.appendChild(this.selectedProduct);
+        
         this.countPrice += +localStorage.getItem(this.selectedProduct.getAttribute('id')).split(',')[1].slice(0, -1);
         this.totalPrice.innerHTML = `Total price: ${this.countPrice}$`;
+        this.productField.appendChild(this.selectedProduct);
     }
 
     deleteContent(indexBtn) { //deletes content by clicking on remove button
