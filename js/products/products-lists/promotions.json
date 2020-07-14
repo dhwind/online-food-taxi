@@ -1,0 +1,40 @@
+[{
+    "photo": "images/products-images/sushi/syake.png",
+    "title": "2x Syake",
+    "composition": [
+        "Salmon",
+        "RICE"
+    ],
+    "price": "5.2",
+    "weight": "150",
+    "product_id": "sushi-4"
+}, {
+    "photo": "images/products-images/soup/miso_salmon_classic.jpg",
+    "title": "2x Miso soup with salmon",
+    "composition": [
+        "Miso broth",
+        "salmon",
+        "tofu",
+        "wakame",
+        "sesame seeds",
+        "green onion"
+    ],
+    "price": "7",
+    "weight": "210",
+    "product_id": "soup-7"
+}, {
+    "photo": "images/products-images/pizza/pizza-margarita.jpg",
+    "title": "2x Margarita +",
+    "composition": [
+        "Basil",
+        "sweet tomato sauce",
+        "tomatoes",
+        "mozzarella cheese",
+        "parmesan cheese",
+        "Russian cheese"
+    ],
+    "price": "7.5",
+    "weight": "370",
+    "product_id": "pizza-7"
+}
+]

@@ -1,0 +1,81 @@
+[{
+    "photo": "images/products-images/sushi/izumidai.png",
+    "title": "Izumidai",
+    "composition": [
+        "Perch",
+        "Rice"
+    ],
+    "price": "5",
+    "weight": "150",
+    "product_id": "sushi-1"
+}, {
+    "photo": "images/products-images/sushi/hiashi.png",
+    "title": "Hiashi",
+    "composition": [
+        "Hiashi wakame",
+        "peanut sauce",
+        "nori",
+        "rice"
+    ],
+    "price": "4.5",
+    "weight": "200",
+    "product_id": "sushi-2"
+}, {
+    "photo": "images/products-images/sushi/salmon-roll.jpg",
+    "title": "salmon roll",
+    "composition": [
+        "Salmon",
+        "Philadelphia cheese",
+        "cucumber",
+        "green onion",
+        "rice",
+        "nori"
+    ],
+    "price": "8",
+    "weight": "220",
+    "product_id": "sushi-3"
+}, {
+    "photo": "images/products-images/sushi/syake.png",
+    "title": "Syake",
+    "composition": [
+        "Salmon",
+        "RICE"
+    ],
+    "price": "6",
+    "weight": "150",
+    "product_id": "sushi-4"
+}, {
+    "photo": "images/products-images/sushi/tuna_sushi.jpg",
+    "title": "Tuna sushi",
+    "composition": [
+        "tuna",
+        "Rice"
+    ],
+    "price": "7",
+    "weight": "200",
+    "product_id": "sushi-5"
+}, {
+    "photo": "images/products-images/sushi/shrimp_sushi.jpg",
+    "title": "Shrimp sushi",
+    "composition": [
+        "Shrimp",
+        "Rice"
+    ],
+    "price": "5",
+    "weight": "180",
+    "product_id": "sushi-6"
+}, {
+    "photo": "images/products-images/sushi/gunkan_salmon.jpg",
+    "title": "Gunkan salmon sushi",
+    "composition": [
+        "salmon",
+        "rice",
+        "caviar masago",
+        "mayo",
+        "nori"
+    ],
+    "price": "9",
+    "weight": "200",
+    "product_id": "sushi-7"
+}
+]

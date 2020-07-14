@@ -1,0 +1,105 @@
+[{
+    "photo": "images/products-images/soup/tom_yam.jpg",
+    "title": "Tom Yam Soup",
+    "composition": [
+        "Tom Yam pasta",
+        "shrimp",
+        "squid",
+        "shiitake mushrooms",
+        "qibul green",
+        "coconut milk",
+        "imbir"
+    ],
+    "price": "3",
+    "weight": "260",
+    "product_id": "soup-1"
+}, {
+    "photo": "images/products-images/soup/seafood.jpg",
+    "title": "Seafood soup",
+    "composition": [
+        "Shrimp broth",
+        "shrimp",
+        "squid",
+        "salmon",
+        "udon noodles",
+        "wakame",
+        "shiitake mushrooms",
+        "green onion"
+    ],
+    "price": "4",
+    "weight": "210",
+    "product_id": "soup-2"
+}, {
+    "photo": "images/products-images/soup/eel.jpg",
+    "title": "Eel soup",
+    "composition": [
+        "Suimono broth",
+        "eel",
+        "wakame",
+        "sesame seeds",
+        "green onion"
+    ],
+    "price": "5",
+    "weight": "200",
+    "product_id": "soup-3"
+}, {
+    "photo": "images/products-images/soup/miso_salmon.jpg",
+    "title": "Miso cream soup with salmon",
+    "composition": [
+        "Miso broth",
+        "cream",
+        "salmon",
+        "rice noodles",
+        "shiitake mushrooms",
+        "wakame",
+        "sesame seeds",
+        "green onion"
+    ],
+    "price": "6",
+    "weight": "190",
+    "product_id": "soup-4"
+}, {
+    "photo": "images/products-images/soup/suimono.jpg",
+    "title": "Suimono soup",
+    "composition": [
+        "fish broth",
+        "rice noodles",
+        "egg",
+        "chicken fillet",
+        "wakame",
+        "shiitake mushrooms",
+        "green onion",
+        "crab stick"
+    ],
+    "price": "5",
+    "weight": "200",
+    "product_id": "soup-5"
+}, {
+    "photo": "images/products-images/soup/miso_classic.jpg",
+    "title": "Miso classic soup",
+    "composition": [
+        "Miso broth",
+        "tofu",
+        "wakame",
+        "sesame seeds",
+        "green onion"
+    ],
+    "price": "6",
+    "weight": "210",
+    "product_id": "soup-6"
+}, {
+    "photo": "images/products-images/soup/miso_salmon_classic.jpg",
+    "title": "Miso soup with salmon",
+    "composition": [
+        "Miso broth",
+        "salmon",
+        "tofu",
+        "wakame",
+        "sesame seeds",
+        "green onion"
+    ],
+    "price": "7",
+    "weight": "210",
+    "product_id": "soup-7"
+}
+]
